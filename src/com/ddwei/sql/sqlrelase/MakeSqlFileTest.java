@@ -257,13 +257,13 @@ public class MakeSqlFileTest {
 	}
 	
 	public static void init(){
-		userId = "l7wd0708";								//Oracle用户名
-		passWord = "l7wd0708";								//Oracle密码
-		url = "jdbc:oracle:thin:@193.158.170.21:1521:orcl";	//Oracle url
+		userId = "scott";								//Oracle用户名
+		passWord = "tiger";								//Oracle密码
+		url = "jdbc:oracle:thin:@127.0.0.1:1521:orcl";	//Oracle url
 		contentPath = "C:/Users/John/Desktop/aaa/aaa.txt";	//生成DML:原文件路径
 		sourcePre = "C:/Users/John/Desktop/aaa/DML.sql";	//生成DML:生成文件路径
 		
-		executeDataConfig = "sqlplus l7wd0708/l7wd0708@193.158.170.21:1521/orcl";	//执行DML 配置相关
+		executeDataConfig = "sqlplus scott/tiger@127.0.0.1:1521/orcl";	//执行DML 配置相关
 		sourcePreTemp = "C:/Users/John/Desktop/aaa/DMLTemp.sql";					//执行DML 临时sql,用于报错停止
 		executeSql = " @"+sourcePreTemp;												//执行DML 执行sql语句
 		
